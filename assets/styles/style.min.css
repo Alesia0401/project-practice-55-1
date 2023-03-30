@@ -18,6 +18,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  text-transform: capitalize;
   color: #222222;
 }
 .nav__item:not(:last-child) {
@@ -256,6 +257,62 @@
 }
 .mobile-app-stores img:nth-of-type(2) {
   margin-left: 1em;
+}
+.organic {
+  position: relative;
+  background: #F3FBF8;
+}
+.organic__h1 {
+  padding: 93px 0 20px;
+  font-family: "Rosario", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.3;
+  color: #222222;
+  text-align: center;
+  text-transform: capitalize;
+}
+.organic__img {
+  position: absolute;
+  top: -34px;
+  left: 96px;
+}
+.organic__text {
+  padding: 40px 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #555555;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.organic__button {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.organic__button .text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: #222222;
+}
+.organic__button .circle {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: #09A66D;
+  border-radius: 50%;
+}
+.organic__button .circle .arrow {
+  position: absolute;
+  top: 23px;
+  right: 15px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
