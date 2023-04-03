@@ -195,7 +195,7 @@
 }
 .organic .organic__container__img {
   position: absolute;
-  width: 50%;
+  width: 70%;
   top: -20px;
   left: -15px;
 }
@@ -279,7 +279,6 @@
 .organic .organic__container__pic {
   position: relative;
   display: block;
-  text-align: -moz-center;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -290,6 +289,10 @@
   }
 }
 
+.statistics-all {
+  display: grid;
+  justify-content: center;
+}
 .statistics-all .statistics {
   display: flex;
   align-items: center;
