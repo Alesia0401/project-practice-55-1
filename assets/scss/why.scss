@@ -1,24 +1,70 @@
 //переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов
-.main-text__h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 90px;
+.main-text {
+  min-width: 670px;
 }
 
-.main-text__h2, .services__h6 {
-    font-family: $fontfRos;
-    color: $colorbl;
+.main-text__h2 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 90px;
+}
+
+.main-text__h2,
+.text__h6 {
+  font-family: $fontfRos;
+  color: $colorbl;
 }
 
 .main-text__p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.main-text__p, .services__p {
-    font-family: $fontfDM;
-    color: $colorgrey;
+.main-text__p,
+.text__p {
+  font-family: $fontfDM;
+  color: $colorgrey;
+}
+
+.text__h6 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.section-container {
+  min-width: 670px;
+}
+
+.services__component,
+.services__component_color {
+  min-width: 381px;
+
+  display: flex;
+}
+
+.component__circle,
+.component__circle_color {
+  min-width: 80px;
+  min-height: 80px;
+  padding: 20px;
+
+  border-radius: 50%;
+}
+
+.component__circle_color,
+.services__component_color {
+  background-color: $bkcolfon;
+}
+
+.circle__img {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.services__text {
+  min-width: 277px;
+
+  flex-direction: column;
 }
