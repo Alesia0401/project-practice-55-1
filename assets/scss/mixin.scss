@@ -1,0 +1,13 @@
+@mixin large-text {
+    font: {
+        family: $fontfRos;
+        size: 70px;
+    }
+}
+
+@mixin medium-text {
+    font-family: $fontfDM;
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+}
