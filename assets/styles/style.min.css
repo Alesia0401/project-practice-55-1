@@ -353,6 +353,7 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 90px;
+  padding-bottom: 20px;
   color: #222222;
 }
 
@@ -390,6 +391,8 @@
 
 .section__container {
   max-width: 670px;
+  position: relative;
+  z-index: 20;
 }
 
 .services__component,
@@ -445,6 +448,20 @@
 .why__img-man,
 .why__img-line {
   max-width: 100%;
+}
+
+.why__img-man {
+  position: absolute;
+  bottom: -1279px;
+  left: 1034px;
+  z-index: 20;
+}
+
+.why__img-line {
+  position: absolute;
+  bottom: -855px;
+  left: 751px;
+  z-index: -10;
 }
 
 .reviews-section {
