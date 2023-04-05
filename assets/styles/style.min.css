@@ -387,11 +387,11 @@
 .why__section {
   margin-top: 141px;
   display: flex;
+  position: relative;
 }
 
 .section__container {
   max-width: 670px;
-  position: relative;
   z-index: 20;
 }
 
@@ -452,15 +452,15 @@
 
 .why__img-man {
   position: absolute;
-  bottom: -1279px;
-  left: 1034px;
+  left: 648px;
+  bottom: 143px;
   z-index: 20;
 }
 
 .why__img-line {
   position: absolute;
-  bottom: -855px;
-  left: 751px;
+  left: 377px;
+  top: -140px;
   z-index: -10;
 }
 
