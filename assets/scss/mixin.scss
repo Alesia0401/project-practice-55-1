@@ -11,3 +11,17 @@
   line-height: 30px;
   color: $colorgrey;
 }
+
+@mixin service {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+@mixin service-circle {
+  max-width: 80px;
+  max-height: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}

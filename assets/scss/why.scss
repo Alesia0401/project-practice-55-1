@@ -1,103 +1,92 @@
 //переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов
-.main-text {
-  max-width: 670px;
+
+.why {
+  .why__container {
+    max-width: 300px;
+    padding: 0 10px;
+    margin: 141px auto 0;
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1275px;
+    }
+    @media screen and (min-width: 5000px) {
+      max-width: 80%;
+    }
+
+    &__content {
+      max-width: 670px;
+      z-index: 20;
+
+      .why__main-text {
+        max-width: 670px;
+      }
+    }
+  }
+
+  &__img-man {
+    max-width: 100%;
+    position: absolute;
+    left: 652px;
+    bottom: 145px;
+    z-index: 20;
+  }
+
+  &__img-line {
+    max-width: 100%;
+    position: absolute;
+    left: 368px;
+    top: -173px;
+    z-index: -10;
+  }
 }
 
-.main-text__h2 {
+.why__main-text__h2 {
   font-family: $fontfRos;
   font-weight: 700;
   font-size: 70px;
   line-height: 90px;
-
   padding-bottom: 20px;
-
   color: $colorbl;
 }
 
-.main-text__p {
+.why__main-text__p {
+  font-family: $fontfDM;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-
   max-width: 637px;
-}
-
-.main-text__p,
-.text__p {
-  font-family: $fontfDM;
   color: $colorgrey;
 }
 
-.text__h6 {
-  font-family: $fontfDM;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-
-  padding-bottom: 8px;
-
-  color: $colorbl;
-}
-
-.why {
-  max-width: 1255px;
-  margin: auto;
-}
-
-.why__section {
-  margin-top: 141px;
-
-  display: flex;
-
-  // начальная точка отсчета положения картинки
-  position: relative;
-}
-
-.section__container {
-  max-width: 670px;
-
-  z-index: 20;
-}
-
-.services__component,
-.services__component_color {
-  max-width: 500px;
-
-  display: flex;
-  justify-content: center;
-
-  column-gap: 24px;
-}
-.services {
+.services-all {
   padding-top: 56px;
-
   display: grid;
+
+  .services {
+    @include service;
+
+    .services__circle_color {
+      @include service-circle;
+      background-color: $bkcolfon;
+    }
+  }
+
+  .services_color {
+    @include service;
+    padding: 40px 59px;
+    margin: 60px 0;
+    background-color: $bkcolfon;
+
+    .services__circle {
+      @include service-circle;
+      background-color: $colorwh;
+    }
+  }
 }
 
-.services__component_color {
-  padding: 40px 59px;
-  margin: 60px 0;
-}
-
-.component__circle,
-.component__circle_color {
-  max-width: 80px;
-  max-height: 80px;
-  padding: 20px;
-
-  border-radius: 50%;
-}
-
-.component__circle {
-  background-color: $colorwh;
-}
-
-.component__circle_color,
-.services__component_color {
-  background-color: $bkcolfon;
-}
-
-.circle__img {
+.services__img {
   max-width: 40px;
   max-height: 40px;
 }
@@ -106,28 +95,28 @@
   max-width: 278px;
 
   flex-direction: column;
+
+  .services__h6 {
+    font-family: $fontfDM;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-bottom: 8px;
+
+    color: $colorbl;
+  }
+
+  .services__p {
+    font-family: $fontfDM;
+    color: $colorgrey;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
-.why__arrow-green {
+.services__arrow {
   padding-top: 50px;
   padding-bottom: 146px;
-}
-
-.why__img-man,
-.why__img-line {
-  max-width: 100%;
-}
-
-.why__img-man {
-  position: absolute;
-  left: 648px;
-  bottom: 143px;
-  z-index: 20;
-}
-
-.why__img-line {
-  position: absolute;
-  left: 377px;
-  top: -140px;
-  z-index: -10;
 }
