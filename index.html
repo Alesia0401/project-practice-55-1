@@ -58,9 +58,17 @@
       <section class="organic">
         <div class="organic__container">
           <h1 class="organic__container__h1">Organic Fruit & Vegetables</h1>
-          <div class="organic__container__img">
-            <img src="assets/images/leaves.png" alt="leaves" />
-          </div>
+          <picture class="organic__container__img">
+            <source
+              srcset="assets/images/leaves-small.png"
+              media="(min-width: 300px)"
+            />
+            <source
+              srcset="assets/images/leaves.png"
+              media="(min-width: 1280px)"
+            />
+            <img src="assets/images/leaves-small.png" alt="leaves" />
+          </picture>
           <div class="organic__container__text">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -79,12 +87,20 @@
             </button>
           </div>
           <div class="organic__container__pic">
-            <div>
+            <picture>
+              <source
+                srcset="assets/images/vegetables-fruits-small.png"
+                media="(min-width: 300px)"
+              />
+              <source
+                srcset="assets/images/vegetables-fruits.png"
+                media="(min-width: 1280px)"
+              />
               <img
-                src="assets/images/vegetables-fruits.png"
+                src="assets/images/vegetables-fruits-small.png"
                 alt="vegetables-fruits"
               />
-            </div>
+            </picture>
             <div class="statistics-all">
               <div class="statistics">
                 <div class="statistics__img">
