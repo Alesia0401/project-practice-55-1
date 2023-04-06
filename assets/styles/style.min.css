@@ -13,9 +13,10 @@
     max-width: 1275px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 5000px) {
   .header-container {
     max-width: 80%;
+    padding: 108px 10px 120px;
   }
 }
 
@@ -62,7 +63,7 @@
     font-size: 18px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 5000px) {
   .nav__item {
     font-size: 1vw;
   }
@@ -75,7 +76,7 @@
     padding-right: 41px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 5000px) {
   .nav__item:not(:last-child) {
     padding-right: 100px;
   }
@@ -87,6 +88,7 @@
 
 .right {
   display: flex;
+  align-items: center;
   column-gap: 5px;
 }
 @media screen and (min-width: 768px) {
@@ -94,7 +96,7 @@
     column-gap: 32px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 5000px) {
   .right {
     column-gap: 70px;
   }
@@ -105,6 +107,12 @@
   height: 40px;
   background-color: #F3FBF8;
   border-radius: 50%;
+}
+@media screen and (min-width: 5000px) {
+  .right .circle {
+    width: 120px;
+    height: 120px;
+  }
 }
 .right .circle .search {
   position: absolute;
@@ -143,7 +151,7 @@
     font-size: 18px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 5000px) {
   .right .regestar {
     width: 11vw;
     height: 8vh;
@@ -173,6 +181,11 @@
   padding: 0 10px;
   margin: auto;
 }
+@media screen and (min-width: 5000px) {
+  .organic .organic__container {
+    max-width: 80%;
+  }
+}
 .organic .organic__container__h1 {
   position: relative;
   z-index: 20;
@@ -200,9 +213,14 @@
     font-size: 70px;
   }
 }
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__h1 {
+    padding: 279px 0 60px;
+    font-size: 268px;
+  }
+}
 .organic .organic__container__img {
   position: absolute;
-  width: 70%;
   top: -20px;
   left: -15px;
 }
@@ -210,6 +228,12 @@
   .organic .organic__container__img {
     top: -34px;
     left: 96px;
+  }
+}
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__img {
+    top: -41px;
+    left: 423px;
   }
 }
 .organic .organic__container__text {
@@ -220,7 +244,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   text-align: center;
   color: #555555;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -236,11 +260,22 @@
     font-size: 18px;
   }
 }
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__text {
+    padding: 0 1000px 80px;
+    font-size: 70px;
+  }
+}
 .organic .organic__container__button {
   display: flex;
   column-gap: 20px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__button {
+    column-gap: 60px;
+  }
 }
 .organic .organic__container__button .text {
   font-family: "DM Sans", sans-serif;
@@ -255,6 +290,11 @@
     font-size: 18px;
   }
 }
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__button .text {
+    font-size: 70px;
+  }
+}
 .organic .organic__container__button .circle {
   position: relative;
   width: 44px;
@@ -266,6 +306,12 @@
   .organic .organic__container__button .circle {
     width: 64px;
     height: 64px;
+  }
+}
+@media screen and (min-width: 5000px) {
+  .organic .organic__container__button .circle {
+    width: 132px;
+    height: 132px;
   }
 }
 .organic .organic__container__button .circle .arrow {
@@ -310,12 +356,26 @@
   margin-bottom: 30px;
   background-color: white;
 }
+@media screen and (min-width: 5000px) {
+  .statistics-all .statistics {
+    column-gap: 72px;
+    width: 750px;
+    height: 348px;
+    margin-bottom: 90px;
+  }
+}
 .statistics-all .statistics .statistics__img {
   position: relative;
   width: 56px;
   height: 56px;
   background-color: #F3FBF8;
   border-radius: 50%;
+}
+@media screen and (min-width: 5000px) {
+  .statistics-all .statistics .statistics__img {
+    width: 168px;
+    height: 168px;
+  }
 }
 .statistics-all .statistics .statistics__img .img {
   position: absolute;
@@ -335,6 +395,11 @@
     font-size: 48px;
   }
 }
+@media screen and (min-width: 5000px) {
+  .statistics-all .statistics .statistics__name {
+    font-size: 144px;
+  }
+}
 .statistics-all .statistics .statistics__text {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -342,6 +407,11 @@
   line-height: 1.7;
   text-align: center;
   color: #000000;
+}
+@media screen and (min-width: 5000px) {
+  .statistics-all .statistics .statistics__text {
+    font-size: 54px;
+  }
 }
 
 .why .why__container {
