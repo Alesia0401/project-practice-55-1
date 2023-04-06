@@ -4,7 +4,7 @@
 }
 
 .explor-container {
-  max-width: 315px;
+  max-width: 1255px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,28 +17,52 @@
   }
   @media screen and (min-width: 1024px) {
     max-width: 1020px;
+    align-items: flex-start;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1275px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 10px;
+  }
+  @media screen and (min-width: 5000px) {
+    max-width: 80%;
+  }
+
+  &__part-1 {
+    @media screen and (min-width: 768px) {
+      width: 50vw;
+      margin: 70px auto 135px auto;
+    }
+  }
+
+  &__part-2 {
+    @media screen and (min-width: 768px) {
+      width: 50vw;
+      margin: 0px auto auto auto;
+    }
   }
 
   &__main-text {
-    margin: 25px auto;
+    margin: 20px auto;
+    @media screen and (min-width: 768px) {
+      margin: 105px auto auto 20px;
+    }
   }
   &__h2 {
-    margin: 25px auto;
+    margin: auto;
     font-family: $fontfRos;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 90px;
+    font-size: 40px;
+    line-height: 55px;
     padding-bottom: 20px;
     color: $colorbl;
-    @media screen and (min-width: 1024px) {
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      margin: 25px auto 0px auto;
       font-size: 70px;
+      line-height: 90px;
       text-align: left;
     }
   }
@@ -50,9 +74,19 @@
     line-height: 30px;
     max-width: 637px;
     color: $colorgrey;
-    @media screen and (min-width: 1024px) {
+    text-align: center;
+    @media screen and (min-width: 1280px) {
       font-size: 18px;
       text-align: left;
+    }
+  }
+
+  &__buttom-part {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      position: relative;
     }
   }
 
@@ -61,43 +95,68 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    margin: 25px auto;
-    @media screen and (min-width: 1024px) {
+    margin: 0px auto;
+    @media screen and (min-width: 1280px) {
       flex-direction: row;
-      align-content: left;
+      justify-content: flex-start;
+      margin: 42px auto auto 15px;
     }
   }
 
   &__text-button {
-    margin: 25px auto;
+    margin: 10px auto;
     font-family: $fontfDM;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     max-width: 637px;
     color: $colorgrey;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1280px) {
+      margin: 25px auto;
       font-size: 18px;
       text-align: left;
     }
   }
 
-  &__image-button {
+  &__circle {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background: $bkcolbut;
+    border-radius: 50%;
     margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 64px;
+      height: 64px;
+      margin: auto auto auto 20px;
+    }
+    @media screen and (min-width: 5000px) {
+      width: 132px;
+      height: 132px;
+      margin: auto auto auto 40px;
+    }
   }
 
-  &__buttom-part {
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: 1024px) {
-      flex-direction: row;
+  &__arrow {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    @media screen and (min-width: 768px) {
+      top: 23px;
+      right: 15px;
+    }
+    @media screen and (min-width: 5000px) {
+      width: 60px;
+      top: 38%;
+      left: 28%;
     }
   }
 
   &__image {
-    @media screen and (min-width: 1024px) {
-      bottom: 0px;
-      left: 0px;
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      bottom: -290px;
+      right: -140px;
     }
   }
 }
