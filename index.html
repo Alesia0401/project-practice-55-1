@@ -24,16 +24,18 @@
         <nav class="nav">
           <ul class="nav__menu">
             <li class="nav__item"><a href="#">About Us</a></li>
-            <li class="nav__item"><a href="#">Service</a></li>
+            <li class="nav__item"><a href="#why-services">Service</a></li>
             <li class="nav__item"><a href="#">Menu</a></li>
             <li class="nav__item"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="btn-menu">
-          <span class="lines"></span>
-          <span class="lines"></span>
-          <span class="lines"></span>
-        </button>
+        <div>
+          <button class="btn-menu">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+          </button>
+        </div>
         <div class="logo">
           <a href="index.html"
             ><img src="assets/images/logo.svg" alt="logo"
@@ -56,9 +58,17 @@
       <section class="organic">
         <div class="organic__container">
           <h1 class="organic__container__h1">Organic Fruit & Vegetables</h1>
-          <div class="organic__container__img">
-            <img src="assets/images/leaves.png" alt="leaves" />
-          </div>
+          <picture class="organic__container__img">
+            <source
+              srcset="assets/images/leaves-small.png"
+              media="(min-width: 300px)"
+            />
+            <source
+              srcset="assets/images/leaves.png"
+              media="(min-width: 1280px)"
+            />
+            <img src="assets/images/leaves-small.png" alt="leaves" />
+          </picture>
           <div class="organic__container__text">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -77,12 +87,20 @@
             </button>
           </div>
           <div class="organic__container__pic">
-            <div>
+            <picture>
+              <source
+                srcset="assets/images/vegetables-fruits-small.png"
+                media="(min-width: 300px)"
+              />
+              <source
+                srcset="assets/images/vegetables-fruits.png"
+                media="(min-width: 1280px)"
+              />
               <img
-                src="assets/images/vegetables-fruits.png"
+                src="assets/images/vegetables-fruits-small.png"
                 alt="vegetables-fruits"
               />
-            </div>
+            </picture>
             <div class="statistics-all">
               <div class="statistics">
                 <div class="statistics__img">
@@ -123,80 +141,123 @@
       <!-- Здесь начинается второй блок why -->
 
       <section class="why">
-        <div class="section-container">
-          <div class="main-text">
-            <h2 class="main-text__h2">Why We Are The Best?</h2>
-            <p class="main-text__p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley...
-            </p>
+        <div class="why__container">
+          <div class="why__content">
+            <div class="why__main-text">
+              <h2 class="why__main-text__h2" id="why-services">
+                Why We Are The Best?
+              </h2>
+              <p class="why__main-text__p">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley...
+              </p>
+            </div>
+            <div class="services-all">
+              <div class="services">
+                <div class="services__circle_color">
+                  <img
+                    class="services__img"
+                    src="assets/images/delivery-man-2.svg"
+                    alt="delivery-man"
+                  />
+                </div>
+                <div class="services__text">
+                  <h6 class="services__h6">Fasted delivery Service</h6>
+                  <p class="services__p">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+              <div class="services_color">
+                <div class="services__circle">
+                  <img
+                    class="services__img"
+                    src="assets/images/shopping-1.svg"
+                    alt="shopping"
+                  />
+                </div>
+                <div class="services__text">
+                  <h6 class="services__h6">Online order Service</h6>
+                  <p class="services__p">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+              <div class="services">
+                <div class="services__circle_color">
+                  <img
+                    class="services__img"
+                    src="assets/images/fast-time-1.svg"
+                    alt="fast-time"
+                  />
+                </div>
+                <div class="services__text">
+                  <h6 class="services__h6">24/8 Service</h6>
+                  <p class="services__p">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+              <div class="services">
+                <a href="#"
+                  ><img
+                    class="services__arrow"
+                    src="assets/images/arrow-green.svg"
+                    alt="arrow-green"
+                /></a>
+              </div>
+            </div>
           </div>
-          <div class="services">
-            <div class="services__component">
-              <div class="component__circle_color">
-                <img
-                  class="circle__img"
-                  src="assets/images/delivery-man-2.svg"
-                  alt="delivery-man"
-                />
-              </div>
-              <div class="services__text">
-                <h6 class="text__h6">Fasted delivery Service</h6>
-                <p class="text__p">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-            <div class="services__component_color">
-              <div class="component__circle">
-                <img
-                  class="circle__img"
-                  src="assets/images/shopping-1.svg"
-                  alt="shopping"
-                />
-              </div>
-              <div class="services__text">
-                <h6 class="text__h6">Online order Service</h6>
-                <p class="text__p">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-            <div class="services__component">
-              <div class="component__circle_color">
-                <img
-                  class="circle__img"
-                  src="assets/images/fast-time-1.svg"
-                  alt="fast-time"
-                />
-              </div>
-              <div class="services__text">
-                <h6 class="text__h6">24/8 Service</h6>
-                <p class="text__p">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
+          <div class="why__img-man">
+            <img src="assets/images/man.png" alt="man" />
           </div>
-          <a href=""
-            ><img
-              class="why__arrow-green"
-              src="assets/images/arrow-green.svg"
-              alt="arrow-green"
-          /></a>
-          <img class="why__img-line" src="assets/images/line.svg" alt="line" />
-          <img class="why__img-man" src="assets/images/man.png" alt="man" />
+          <div class="why__img-line">
+            <img src="assets/images/line.svg" alt="line" />
+          </div>
         </div>
       </section>
 
       <!-- Здесь заканчивается второй блок -->
 
       <!-- Здесь начинается третий блок explor -->
-      <section class="explor"></section>
+      <div class="explor">
+        <section class="explor-container">
+          <div>
+            <img
+              src="assets/images/block3-picture-with-vegetables.jpg"
+              alt="Примеры продукции"
+            />
+          </div>
+          <div>
+            <div class="explor-container__main-text">
+              <h2 class="explor-container__h2">Explor Our Special Items</h2>
+              <p class="explor-container__p">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer...
+              </p>
+            </div>
+            <div class="explor-container__buttom-part">
+              <div class="explor-container__button">
+                <p class="explor-container__text-button">Explor Now</p>
+                <buttom class="explor-container__image-button">
+                  <img src="assets/images/block3-icon-for-buttom.png" alt="#" />
+                </buttom>
+              </div>
+              <img
+                class="explor-container__image"
+                src="assets/images/leaves.png"
+                alt="leaves"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
       <!-- Здесь заканчивается третий блок -->
 
       <!-- Здесь начинается четвертый блок what-our -->
@@ -302,51 +363,53 @@
     </main>
     <footer>
       <!-- Здесь начинается последний блок footer -->
-      <div>
-        <a href="index.html">
-          <img class="logo" src="assets/images/logo.svg" alt="logo" />
-        </a>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer...
-        </p>
-      </div>
-      <section>
-        <h3>Navigation</h3>
-        <nav class="nav">
-          <ul class="nav__menu">
-            <li class="nav__item"><a href="#">About Us</a></li>
-            <li class="nav__item"><a href="#">Service</a></li>
-            <li class="nav__item"><a href="#">Menu</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
-        <h3>Resources</h3>
-        <nav class="nav">
-          <ul class="nav__menu">
-            <li class="nav__item"><a href="#">Reviews</a></li>
-            <li class="nav__item"><a href="#">Blog</a></li>
-            <li class="nav__item"><a href="#">Update News</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
-        <h3>Contact Us</h3>
-        <a href="mailto:oyasim@email.com">Email: oyasim@email.com</a>
-        <div>
-          <a href="#"
-            ><img src="../assets/images/icon-1-facebook.svg" alt="Facebook"
-          /></a>
-          <a href="#"
-            ><img src="../assets/images/icon-2-twitter.svg" alt="Twitter"
-          /></a>
-          <a href="#"
-            ><img src="../assets/images/icon-3-instagram.svg" alt="Instagram"
-          /></a>
+      <div class="footer-container">
+        <div class="footer-text">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer...
+          </p>
         </div>
-      </section>
+        <section class="extra-inf">
+          <h3 class="extra-inf__title">Navigation</h3>
+          <ul class="extra-inf__menu">
+            <li><a class="extra-inf__item" href="#">About Us</a></li>
+            <li><a class="extra-inf__item" href="#">Service</a></li>
+            <li><a class="extra-inf__item" href="#">Menu</a></li>
+          </ul>
+        </section>
+        <section class="extra-inf">
+          <h3 class="extra-inf__title">Resources</h3>
+          <ul class="extra-inf__menu">
+            <li><a class="extra-inf__item" href="#">Reviews</a></li>
+            <li><a class="extra-inf__item" href="#">Blog</a></li>
+            <li><a class="extra-inf__item" href="#">Update News</a></li>
+          </ul>
+        </section>
+        <section class="extra-inf">
+          <h3 class="extra-inf__title">Contact Us</h3>
+          <a class="extra-inf__item" href="mailto:oyasim@email.com"
+            >Email: oyasim@email.com</a
+          >
+          <div class="extra-inf__list">
+            <a href="#"
+              ><img src="assets/images/icon-1-facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/icon-2-twitter.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/icon-3-instagram.svg" alt="Instagram"
+            /></a>
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

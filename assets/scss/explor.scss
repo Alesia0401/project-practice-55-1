@@ -1,1 +1,103 @@
 //Это переменные для шрифтов и цвета в файле var.scss, их подставляете вместо названия шрифтов
+.explor {
+  background: $bkcolfon;
+}
+
+.explor-container {
+  max-width: 315px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 763px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1020px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1275px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  &__main-text {
+    margin: 25px auto;
+  }
+  &__h2 {
+    margin: 25px auto;
+    font-family: $fontfRos;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90px;
+    padding-bottom: 20px;
+    color: $colorbl;
+    @media screen and (min-width: 1024px) {
+      font-size: 70px;
+      text-align: left;
+    }
+  }
+
+  &__p {
+    font-family: $fontfDM;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 637px;
+    color: $colorgrey;
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 25px auto;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-content: left;
+    }
+  }
+
+  &__text-button {
+    margin: 25px auto;
+    font-family: $fontfDM;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 637px;
+    color: $colorgrey;
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  &__image-button {
+    margin: auto;
+  }
+
+  &__buttom-part {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: 1024px) {
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}
