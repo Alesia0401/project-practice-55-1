@@ -8,13 +8,13 @@
   align-items: center;
   padding: 25px 25px;
   margin: auto;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     max-width: 763px;
   }
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     max-width: 1020px;
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     max-width: 1275px;
     flex-direction: row;
     justify-content: space-between;
@@ -28,8 +28,8 @@
   justify-content: center;
   margin: auto 20px;
   @media screen and (min-width: 1024px) {
-    justify-content: left;;
-    }
+    justify-content: left;
+  }
 }
 
 .extra-inf {
@@ -38,7 +38,7 @@
   }
 
   &__title {
-    font-family: $fontfDM;
+    font-family: $fontfRos;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.3;
@@ -72,5 +72,5 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    }
+  }
 }
