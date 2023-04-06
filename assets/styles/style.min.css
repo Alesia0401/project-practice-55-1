@@ -727,6 +727,13 @@ html {
   grid-template: 1fr auto/5fr 3fr;
   padding: 0 3rem;
 }
+@media screen and (min-width: 2560px) {
+  .reviews-section {
+    max-width: 80%;
+    padding: 80px 10px;
+    margin: 0 auto;
+  }
+}
 
 .review-text {
   margin-right: 8rem;
@@ -751,8 +758,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .review-text p {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -780,8 +787,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .review-text span {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 0.75rem;
+    line-height: 1.4rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -812,7 +819,7 @@ html {
 }
 @media screen and (min-width: 2560px) {
   .review-data-user span {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     line-height: 4.55rem;
   }
 }
@@ -961,6 +968,13 @@ html {
   padding: 0 100px;
   margin-top: 150px;
 }
+@media screen and (min-width: 2560px) {
+  .mobile-app-section {
+    max-width: 80%;
+    padding: 80px 10px;
+    margin: 150px auto 0 auto;
+  }
+}
 
 .iphone-photo {
   display: grid;
@@ -1013,8 +1027,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .mobile-app-text p {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -1041,8 +1055,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .mobile-app-text span {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 0.75rem;
+    line-height: 1.4rem;
   }
 }
 @media screen and (min-width: 2560px) {
