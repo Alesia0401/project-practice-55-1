@@ -1,15 +1,91 @@
+$desktop-xxl:2560px;
+$desktop: 1024px;
+$mobile:768px;
+
+@mixin mobile {
+    @media screen and (max-width:#{$mobile - 1}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:$mobile) and  (max-width:#{$desktop - 1})  {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:$desktop) and  (max-width:#{$desktop-xxl - 1}) {
+        @content;
+    }
+}
+
+@mixin desktop-xxl {
+    @media screen and (min-width:$desktop-xxl) {
+        @content;
+    }
+}
+
+$base-font-size: 16px;
+$base-line-height:24px;
+
+html {
+    font-size: clamp(1rem, 0.8873rem + 0.5634vw, 4rem);
+    line-height: $base-line-height;
+}
+
 @mixin large-text {
-  font: {
-    family: $fontfRos;
-    size: 70px;
-  }
+    font: {
+        family: $fontfRos;
+        weight: 700;
+    }
+    color: $colorbl;
+    margin: 1rem 0;
+
+    @include mobile {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    @include tablet {
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
+
+    @include desktop {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    @include desktop-xxl {
+        font-size: 4.375rem;
+        line-height: 5.625rem;
+    }
 }
 
 @mixin medium-text {
-  font-family: $fontfDM;
-  font-size: 18px;
-  line-height: 30px;
-  color: $colorgrey;
+    font-family: $fontfDM;
+    color: #555555;
+
+    @include mobile {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    @include desktop {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    @include desktop-xxl {
+        font-size: 1.625rem;
+        line-height: 2.275rem;
+    }
 }
 
 @mixin service {
