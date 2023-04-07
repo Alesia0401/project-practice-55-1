@@ -223,18 +223,22 @@
           </div>
         </div>
       </section>
-
       <!-- Здесь заканчивается второй блок -->
 
       <!-- Здесь начинается третий блок explor -->
       <div class="explor">
         <section class="explor-container">
-          <div class="explor-container__part-1">
-            <img
-              src="assets/images/block3-picture-with-vegetables.jpg"
-              alt="Примеры продукции"
+          <picture class="explor-container__part-1">
+            <source
+              srcset="assets/images/block3-picture-with-vegetables.jpg"
+              media="(min-width: 1024px)"
             />
-          </div>
+            <img
+            src="assets/images/block3-picture-with-vegetables-small.jpg"
+            alt="Примеры продукции"
+          />
+        </picture>
+          
           <div class="explor-container__part-2">
             <div class="explor-container__main-text">
               <h2 class="explor-container__h2">Explor Our Special Items</h2>
@@ -254,11 +258,13 @@
                     alt="arrow"
                   />
               </div>
-              <img
-                class="explor-container__image"
-                src="assets/images/leaves.png"
-                alt="leaves"
-              />
+              <picture class="explor-container__image">
+                <source
+                  srcset="assets/images/leaves.png"
+                  media="(min-width: 1024px)"
+                />
+                <img src="assets/images/leaves-small.png" alt="leaves" />
+              </picture>
             </div>
           </div>
         </section>

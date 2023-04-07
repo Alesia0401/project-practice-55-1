@@ -297,7 +297,6 @@ html {
   z-index: 20;
   padding: 0 20px 40px;
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.78;
@@ -529,7 +528,7 @@ html {
   max-width: 100%;
   position: absolute;
   left: -20px;
-  bottom: 538px;
+  bottom: 600px;
   z-index: 20;
 }
 @media screen and (min-width: 1280px) {
@@ -605,7 +604,7 @@ html {
 @media screen and (min-width: 1280px) {
   .why .why__main-text__h2 {
     font-size: 70px;
-    padding: 142px 0 20px;
+    padding: 120px 0 20px;
   }
 }
 @media screen and (min-width: 5000px) {
@@ -618,15 +617,17 @@ html {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 2;
+  line-height: 1.7;
   max-width: 300px;
   color: #555555;
   padding: 0 20px;
+  text-align: center;
 }
 @media screen and (min-width: 1280px) {
   .why .why__main-text__p {
     max-width: 637px;
     font-size: 18px;
+    text-align: start;
     padding: 0;
   }
 }
@@ -723,6 +724,9 @@ html {
     padding: 70px;
     border-radius: 50%;
   }
+}
+.why .services__img {
+  width: 100px;
 }
 @media screen and (min-width: 5000px) {
   .why .services__img {
