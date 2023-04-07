@@ -997,8 +997,25 @@ html {
 
 .reviews-section {
   display: grid;
-  grid-template: 1fr auto/5fr 3fr;
-  padding: 0 3rem;
+  grid-template: 1fr auto/5fr 4fr;
+  padding: 0 4.375rem;
+  column-gap: 6rem;
+}
+@media screen and (max-width: 767px) {
+  .reviews-section {
+    grid-template: 1fr auto auto/1fr;
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .reviews-section {
+    column-gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .reviews-section {
+    margin-top: 4.75rem;
+  }
 }
 @media screen and (min-width: 2560px) {
   .reviews-section {
@@ -1008,9 +1025,6 @@ html {
   }
 }
 
-.review-text {
-  margin-right: 8rem;
-}
 .review-text p {
   font-family: "Rosario", sans-serif;
   font-weight: 700;
@@ -1031,8 +1045,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .review-text p {
-    font-size: 2.5rem;
-    line-height: 3.25rem;
+    font-size: 3rem;
+    line-height: 3.65rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -1044,7 +1058,8 @@ html {
 .review-text span {
   font-family: "DM Sans", sans-serif;
   color: #555555;
-  margin-top: 2rem;
+  padding-right: 2rem;
+  display: inline-block;
 }
 @media screen and (max-width: 767px) {
   .review-text span {
@@ -1070,17 +1085,30 @@ html {
     line-height: 2.275rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .review-text {
+    margin: 0;
+  }
+  .review-text span {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .review-text {
+    margin-right: 1rem;
+  }
+}
 
 .review-data {
   grid-area: 2/1/3/2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2em 0;
+  padding: 1.75em 0;
 }
 
 .review-data-user span {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.35rem;
   line-height: 2rem;
   color: #222222;
 }
@@ -1099,14 +1127,14 @@ html {
 
 .stars {
   display: flex;
-  padding: 1.5em 0;
+  padding: 0.5em 0;
 }
 .stars img {
   width: 1.55rem;
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .stars img {
-    width: 2.5rem;
+    width: 1rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -1125,16 +1153,26 @@ html {
 
 .review-data-control {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
 }
-.review-data-control div {
-  margin: 0 0.75em;
+.review-data-control div:nth-child(2) {
+  margin: 0 0.75rem;
+}
+@media screen and (min-width: 2560px) {
+  .review-data-control div:nth-child(2) {
+    margin: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .review-data-control {
+    margin-left: 1rem;
+  }
 }
 
 .arrow-round {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 1px solid #CCCCCC;
   border-radius: 50%;
   display: flex;
@@ -1155,8 +1193,8 @@ html {
 }
 @media screen and (min-width: 2560px) {
   .arrow-round {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 .arrow-round img {
@@ -1164,7 +1202,7 @@ html {
 }
 @media screen and (min-width: 2560px) {
   .arrow-round img {
-    width: 1.5rem;
+    width: 1rem;
   }
 }
 
@@ -1181,8 +1219,22 @@ html {
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .review-users {
+    grid-area: 3/1/4/2;
+    justify-self: center;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .review-users {
+    justify-self: center;
+    max-width: 500px;
+  }
+}
 
 .review-user-photo {
+  margin-top: 4rem;
   background: #F3FBF8;
   border-radius: 50%;
   display: flex;
@@ -1190,12 +1242,17 @@ html {
   align-items: flex-end;
   overflow: hidden;
 }
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
+  .review-user-photo img {
+    max-height: 18rem;
+  }
+}
 
 .review-other-users {
   position: absolute;
   display: inline-block;
-  bottom: 6%;
-  left: 8%;
+  bottom: 3%;
+  left: -2%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1208,12 +1265,15 @@ html {
   padding: 0.5em 0;
 }
 .review-other-users .stars img {
-  width: 1em;
+  width: 0.75em;
 }
 @media screen and (min-width: 2560px) {
   .review-other-users .stars img {
     width: 2.5rem;
   }
+}
+.review-other-users .stars img:not(:first-child) {
+  margin-left: 0.25rem;
 }
 .review-other-users .users {
   display: flex;
@@ -1239,7 +1299,21 @@ html {
   align-items: center;
   column-gap: 1rem;
   padding: 0 100px;
-  margin-top: 150px;
+  margin: 120px 0;
+}
+@media screen and (max-width: 767px) {
+  .mobile-app-section {
+    grid-template: 1fr 500px/1fr;
+    margin: 75px 0;
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobile-app-section {
+    grid-template: 1fr/300px 1fr;
+    margin-top: 75px;
+    padding: 0 25px;
+  }
 }
 @media screen and (min-width: 2560px) {
   .mobile-app-section {
@@ -1251,7 +1325,7 @@ html {
 
 .iphone-photo {
   display: grid;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
 }
@@ -1263,12 +1337,45 @@ html {
 .iphone-photo img:nth-child(2) {
   z-index: -1;
   left: -10%;
-  height: 18rem;
+  height: 20rem;
+}
+@media screen and (max-width: 767px) {
+  .iphone-photo {
+    display: grid;
+    justify-content: center;
+    max-height: 500px;
+    grid-area: 2/1/3/2;
+    margin-top: 30px;
+  }
+  .iphone-photo img {
+    grid-area: 1/1/2/2;
+    position: relative;
+    max-height: 470px;
+  }
+  .iphone-photo img:nth-child(2) {
+    left: -25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .iphone-photo img {
+    max-height: 440px;
+  }
+  .iphone-photo img:nth-child(2) {
+    max-height: 360px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .iphone-photo img {
+    height: 33rem;
+  }
+  .iphone-photo img:nth-child(2) {
+    height: 30rem;
+  }
 }
 
 .btn-download {
   display: inline-block !important;
-  font-size: 1.375rem;
+  font-size: 0.8rem;
   padding: 0.75em 1.25em;
   background: #F3FBF8;
   border-radius: 50px;
@@ -1278,6 +1385,27 @@ html {
   font-family: "DM Sans", sans-serif;
   color: #333333;
   cursor: pointer;
+}
+@media screen and (min-width: 2560px) {
+  .btn-download {
+    font-size: 1.8rem;
+  }
+}
+
+.mobile-description {
+  padding: 0 4rem;
+}
+@media screen and (max-width: 767px) {
+  .mobile-description {
+    grid-area: 1/1/2/2;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobile-description {
+    align-self: center;
+    grid-area: 1/2/2/3;
+  }
 }
 
 .mobile-app-text p {
@@ -1300,8 +1428,8 @@ html {
 }
 @media screen and (min-width: 1024px) and (max-width: 2559px) {
   .mobile-app-text p {
-    font-size: 2.5rem;
-    line-height: 3.25rem;
+    font-size: 3rem;
+    line-height: 3.65rem;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -1313,6 +1441,8 @@ html {
 .mobile-app-text span {
   font-family: "DM Sans", sans-serif;
   color: #555555;
+  display: block;
+  padding-right: 3rem;
 }
 @media screen and (max-width: 767px) {
   .mobile-app-text span {
@@ -1338,82 +1468,33 @@ html {
     line-height: 2.275rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .mobile-app-text span {
+    padding: 0;
+  }
+}
 
 .mobile-app-stores {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 2560px) {
+  .mobile-app-stores {
+    margin-top: 4rem;
+  }
 }
 .mobile-app-stores img {
-  width: 10rem;
+  width: 5rem;
+}
+@media screen and (min-width: 2560px) {
+  .mobile-app-stores img {
+    width: 10rem;
+  }
 }
 .mobile-app-stores img:nth-of-type(2) {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 767px) {
-  .reviews-section {
-    grid-template: 1fr auto auto/1fr;
-    padding: 0 1.5rem;
-  }
-  .reviews-section .review-text {
-    margin: 0;
-  }
-  .reviews-section .review-users {
-    grid-area: 3/1/4/2;
-    justify-self: center;
-    max-width: 500px;
-  }
-  .mobile-app-section {
-    grid-template: 1fr 500px/1fr;
-    margin-top: 75px;
-    padding: 0 25px;
-  }
-  .mobile-app-section .iphone-photo {
-    display: grid;
-    max-height: 500px;
-    grid-area: 2/1/3/2;
-    margin-top: 30px;
-  }
-  .mobile-app-section .iphone-photo img {
-    grid-area: 1/1/2/2;
-    position: relative;
-    max-height: 470px;
-  }
-  .mobile-app-section .iphone-photo img:nth-child(2) {
-    left: -25px;
-  }
-  .mobile-app-section .mobile-description {
-    grid-area: 1/1/2/2;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .reviews-section {
-    grid-template: 1fr auto/auto 350px;
-    padding: 0 25px;
-  }
-  .reviews-section .review-text {
-    margin-right: 1rem;
-  }
-  .reviews-section .review-users {
-    justify-self: center;
-    max-width: 500px;
-  }
-  .mobile-app-section {
-    grid-template: 1fr/300px 1fr;
-    margin-top: 75px;
-    padding: 0 25px;
-  }
-  .mobile-app-section .iphone-photo img {
-    max-height: 440px;
-  }
-  .mobile-app-section .iphone-photo img:nth-child(2) {
-    max-height: 360px;
-  }
-  .mobile-app-section .mobile-description {
-    align-self: center;
-    grid-area: 1/2/2/3;
-  }
-}
 .footer-container {
   max-width: 315px;
   height: 100%;

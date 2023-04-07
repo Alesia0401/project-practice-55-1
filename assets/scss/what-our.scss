@@ -1,7 +1,21 @@
 .reviews-section {
     display: grid;
-    grid-template:1fr auto/5fr 3fr;
-    padding: 0 3rem;
+    grid-template:1fr auto/5fr 4fr;
+    padding: 0 4.375rem;
+    column-gap: 6rem;
+
+    @include mobile {
+        grid-template: 1fr auto auto/1fr;
+        padding: 0 1.5rem;
+    }
+
+    @include tablet {
+        column-gap: 1rem;
+    }
+
+    @include desktop {
+        margin-top: 4.75rem;
+    }
     @include desktop-xxl {
         max-width: 80%;
         padding: 80px 10px;
@@ -10,7 +24,6 @@
 }
 
 .review-text {
-    margin-right: 8rem;
 
     & p {
         @include large-text;
@@ -18,7 +31,20 @@
 
     & span {
         @include medium-text;
-        margin-top: 2rem;
+        padding-right: 2rem;
+        display: inline-block;
+    }
+
+    @include mobile {
+        margin: 0;
+
+        & span {
+            padding: 0;
+        }
+    }
+
+    @include tablet {
+        margin-right: 1rem;
     }
 }
 
@@ -26,13 +52,13 @@
     grid-area:2/1/3/2;
     display: grid;
     grid-template-columns:1fr 1fr;
-    padding: 2em 0;
+    padding: 1.75em 0;
 }
 
 
 .review-data-user span{
     font-family: $fontfDM;
-    font-size: 1.875rem;
+    font-size: 1.35rem;
     line-height: 2rem;
 
     @include mobile {
@@ -49,13 +75,13 @@
 
 .stars {
     display: flex;
-    padding: 1.5em 0;
+    padding: 0.5em 0;
 
     & img {
         width: 1.55rem;
 
         @include desktop {
-            width: 2.5rem;
+            width: 1rem;
         }
 
         @include desktop-xxl {
@@ -74,17 +100,25 @@
 
 .review-data-control {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
 
-    & div {
-        margin: 0 0.75em;
+    & div:nth-child(2){
+        margin: 0 0.75rem;
+
+        @include desktop-xxl {
+            margin: 0 1.5rem;
+        }
+    }
+
+    @include mobile {
+        margin-left: 1rem;
     }
 }
 
 .arrow-round {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 1px solid #CCCCCC;
     border-radius: 50%;
     display: flex;
@@ -103,15 +137,15 @@
     }
 
     @include desktop-xxl {
-        width: 7.5rem;
-        height: 7.5rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     & img {
         width: 0.5rem;
 
         @include desktop-xxl {
-            width: 1.5rem;
+            width: 1rem;
         }
     }
 }
@@ -128,22 +162,40 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include mobile {
+        grid-area: 3/1/4/2;
+        justify-self: center;
+        max-width: 500px;
+    }
+
+    @include tablet {
+        justify-self: center;
+        max-width: 500px;
+    }
 }
 
 .review-user-photo {
+    margin-top: 4rem;
     background: $bkcolfon;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+
+    @include desktop {
+        & img {
+            max-height: 18rem;
+        }
+    }
 }
 
 .review-other-users {
     position: absolute;
     display: inline-block;
-    bottom: 6%;
-    left: 8%;
+    bottom: 3%;
+    left: -2%;
     display: flex;
     flex-flow:column nowrap;
     justify-content: center;
@@ -156,11 +208,14 @@
         padding: 0.5em 0;
 
         & img {
-            width: 1em;
+            width: 0.75em;
 
             @include desktop-xxl {
                 width: 2.5rem;
             }
+        }
+        & img:not(:first-child) {
+            margin-left: 0.25rem;
         }
     }
 
@@ -191,7 +246,19 @@
     align-items: center;
     column-gap: 1rem;
     padding: 0 100px;
-    margin-top: 150px;
+    margin: 120px 0;
+
+    @include mobile {
+        grid-template: 1fr 500px/1fr;
+        margin: 75px 0;
+        padding: 0 25px;
+    }
+
+    @include tablet {
+        grid-template: 1fr /300px 1fr;
+        margin-top: 75px;
+        padding: 0 25px;
+    }
 
     @include desktop-xxl {
         max-width: 80%;
@@ -202,7 +269,7 @@
 
 .iphone-photo {
     display: grid;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
 
@@ -215,13 +282,51 @@
     & img:nth-child(2) {
         z-index: -1;
         left:-10%;
-        height: 18rem;
+        height: 20rem;
+    }
+
+    @include mobile {
+        display: grid;
+        justify-content: center;
+        max-height: 500px;
+        grid-area: 2/1/3/2;
+        margin-top: 30px;
+
+        & img {
+            grid-area: 1/1/2/2;
+            position: relative;
+            max-height: 470px;
+        }
+
+        & img:nth-child(2){
+            left:-25px;
+        }
+    }
+
+    @include tablet {
+        & img {
+            max-height: 440px;
+        }
+
+        & img:nth-child(2){
+            max-height: 360px;
+        }
+    }
+
+    @include desktop-xxl {
+        & img {
+            height: 33rem;
+        }
+
+        & img:nth-child(2) {
+            height: 30rem;
+        }
     }
 }
 
 .btn-download {
     display: inline-block !important;
-    font-size: 1.375rem;
+    font-size: 0.8rem;
     padding: 0.75em 1.25em;
     background: #F3FBF8;
     border-radius: 50px;
@@ -231,6 +336,24 @@
     font-family: $fontfDM;
     color: #333333;
     cursor: pointer;
+
+    @include desktop-xxl {
+        font-size: 1.8rem;
+    }
+}
+
+.mobile-description {
+    padding: 0 4rem;
+
+    @include mobile {
+        grid-area: 1/1/2/2;
+        padding: 0;
+    }
+
+    @include tablet {
+        align-self: center;
+        grid-area: 1/2/2/3;
+    }
 }
 
 .mobile-app-text {
@@ -240,100 +363,34 @@
 
     & span {
         @include medium-text;
+        display: block;
+        padding-right: 3rem;
+    }
+
+    @include mobile {
+        & span {
+            padding: 0;
+        }
     }
 }
 
 .mobile-app-stores {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 1rem;
+
+    @include desktop-xxl {
+        margin-top: 4rem;
+    }
 
     & img {
-        width: 10rem;
+        width: 5rem;
+
+        @include desktop-xxl {
+            width: 10rem;
+        }
     }
 
     img:nth-of-type(2) {
         margin-left: 1rem;
-    }
-}
-
-@include mobile {
-    .reviews-section {
-        grid-template: 1fr auto auto/1fr;
-        padding: 0 1.5rem;
-
-        .review-text {
-            margin: 0;
-        }
-
-        .review-users {
-            grid-area: 3/1/4/2;
-            justify-self: center;
-            max-width: 500px;
-        }
-    }
-
-    .mobile-app-section {
-        grid-template: 1fr 500px/1fr;
-        margin-top: 75px;
-        padding: 0 25px;
-
-        .iphone-photo {
-            display: grid;
-            max-height: 500px;
-            grid-area: 2/1/3/2;
-            margin-top: 30px;
-
-            & img {
-                grid-area: 1/1/2/2;
-                position: relative;
-                max-height: 470px;
-            }
-
-            & img:nth-child(2){
-                left:-25px;
-            }
-        }
-
-
-        .mobile-description {
-            grid-area: 1/1/2/2;
-        }
-    }
-}
-
-@include tablet {
-    .reviews-section {
-        grid-template: 1fr auto/auto 350px;
-        padding: 0 25px;
-
-        .review-text {
-            margin-right: 1rem;
-        }
-
-        .review-users {
-            justify-self: center;
-            max-width: 500px;
-        }
-    }
-
-    .mobile-app-section {
-        grid-template: 1fr /300px 1fr;
-        margin-top: 75px;
-        padding: 0 25px;
-
-        .iphone-photo {
-            & img {
-                max-height: 440px;
-            }
-
-            & img:nth-child(2){
-                max-height: 360px;
-            }
-        }
-
-        .mobile-description {
-            align-self: center;
-            grid-area: 1/2/2/3;
-        }
     }
 }
