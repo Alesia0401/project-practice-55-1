@@ -1,8 +1,9 @@
 .reviews-section {
     display: grid;
-    grid-template:1fr auto/5fr 4fr;
+    grid-template:1fr auto/7fr 4fr;
     padding: 0 4.375rem;
-    column-gap: 6rem;
+    max-width: 1255px;
+    margin: 4rem auto 0 auto;
 
     @include mobile {
         grid-template: 1fr auto auto/1fr;
@@ -14,8 +15,10 @@
     }
 
     @include desktop {
-        margin-top: 4.75rem;
+        padding: 0;
+        margin-top: 6rem;
     }
+
     @include desktop-xxl {
         max-width: 80%;
         padding: 80px 10px;
@@ -46,13 +49,33 @@
     @include tablet {
         margin-right: 1rem;
     }
+
+    @include desktop {
+        & span {
+            margin-top: 1rem;
+            padding-right: 7rem;
+        }
+    }
+
+    @include desktop-xxl {
+        & p {
+            font-size: 268px;
+            line-height: 350px;
+        }
+
+        & span {
+            font-size: 70px;
+            line-height: 125px;
+            padding-right: 350px;
+        }
+    }
 }
 
 .review-data {
     grid-area:2/1/3/2;
     display: grid;
     grid-template-columns:1fr 1fr;
-    padding: 1.75em 0;
+    padding: 2.75em 0;
 }
 
 
@@ -66,22 +89,26 @@
         line-height: 1.5rem;
     }
 
+    @include desktop {
+        margin-bottom: 2rem
+    }
+
     @include desktop-xxl {
-        font-size: 2.75rem;
-        line-height: 4.55rem;
+        font-size: 100px;
+        line-height: 130px;
     }
     color: $colorbl;
 }
 
 .stars {
     display: flex;
-    padding: 0.5em 0;
+    padding: 1.5em 0;
 
     & img {
-        width: 1.55rem;
+        width: 1.875rem;
 
         @include desktop {
-            width: 1rem;
+            width: 1.5rem;
         }
 
         @include desktop-xxl {
@@ -136,16 +163,21 @@
         align-self:center;
     }
 
+    @include desktop {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
     @include desktop-xxl {
-        width: 5rem;
-        height: 5rem;
+        width: 12rem;
+        height: 12rem;
     }
 
     & img {
         width: 0.5rem;
 
         @include desktop-xxl {
-            width: 1rem;
+            width: 2rem;
         }
     }
 }
@@ -186,7 +218,7 @@
 
     @include desktop {
         & img {
-            max-height: 18rem;
+            max-height: 28rem;
         }
     }
 }
@@ -204,6 +236,19 @@
     box-shadow: -15px 15px 25px 0px #00603C0A;
     border-radius: 12px;
 
+    @include desktop {
+        left: 10%;
+        bottom: 3%;
+    }
+
+    @include desktop-xxl {
+        left:-15%;
+    }
+
+    @include desktop-xxl {
+        padding: 50px 100px;
+    }
+
     & .stars {
         padding: 0.5em 0;
 
@@ -211,7 +256,7 @@
             width: 0.75em;
 
             @include desktop-xxl {
-                width: 2.5rem;
+                width: 75px;
             }
         }
         & img:not(:first-child) {
@@ -230,6 +275,16 @@
                 width: 2.75rem;
                 height: 2.75rem;
             }
+
+            @include desktop {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            @include desktop-xxl {
+                width: 110px;
+                height: 110px;
+            }
         }
 
         & img:not(:first-of-type) {
@@ -245,8 +300,8 @@
     grid-template-columns: 3fr 7fr;
     align-items: center;
     column-gap: 1rem;
-    padding: 0 100px;
-    margin: 120px 0;
+    max-width: 1255px;
+    margin: 120px auto;
 
     @include mobile {
         grid-template: 1fr 500px/1fr;
@@ -261,6 +316,7 @@
     }
 
     @include desktop-xxl {
+        column-gap: 16rem;
         max-width: 80%;
         padding: 80px 10px;
         margin: 150px auto 0 auto;
@@ -313,13 +369,23 @@
         }
     }
 
-    @include desktop-xxl {
+    @include desktop {
         & img {
-            height: 33rem;
+            height: 500px;
         }
 
         & img:nth-child(2) {
-            height: 30rem;
+            height: 470px;
+        }
+    }
+
+    @include desktop-xxl {
+        & img {
+            height: 1600px;
+        }
+
+        & img:nth-child(2) {
+            height: 1300px;
         }
     }
 }
@@ -338,7 +404,7 @@
     cursor: pointer;
 
     @include desktop-xxl {
-        font-size: 1.8rem;
+        font-size: 70px;
     }
 }
 
@@ -372,6 +438,18 @@
             padding: 0;
         }
     }
+
+    @include desktop-xxl {
+        & p {
+            font-size: 268px;
+            line-height: 350px;
+        }
+
+        & span {
+            font-size: 70px;
+            line-height: 125px;
+        }
+    }
 }
 
 .mobile-app-stores {
@@ -386,11 +464,14 @@
         width: 5rem;
 
         @include desktop-xxl {
-            width: 10rem;
+            width: 400px;
         }
     }
 
     img:nth-of-type(2) {
         margin-left: 1rem;
+        @include desktop-xxl {
+            margin-left: 100px;
+        }
     }
 }
