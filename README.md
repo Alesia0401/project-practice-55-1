@@ -1,7 +1,4 @@
 # project-practice-55-1
-Сайт "Органические фрукты и овощи"
-
-https://www.figma.com/file/YasVj3iKyhlHfL5pob9Pbo/organic-food-%2B-(Copy)?t=ziVN0v2mBLHddWVp-0
 
 В Header использовала flex, а в блоке Organic — flex, grid, position.
 
@@ -15,3 +12,42 @@ https://www.figma.com/file/YasVj3iKyhlHfL5pob9Pbo/organic-food-%2B-(Copy)?t=ziVN
 В блоке использованы картинки с разными разрешениями с атрибутом srcset.
 
 В пятом блоке "footer" использовала flex.
+
+## Ссылка на сайт:
+
+<a alt="Link" href="https://alesia0401.github.io/project-practice-55-1/">Organic Fruit & Vegetables</a>
+
+## Макет сайта:
+
+<a alt="Link" href="https://www.figma.com/file/YasVj3iKyhlHfL5pob9Pbo/organic-food-%2B-(Copy)?t=ziVN0v2mBLHddWVp-0">Organic Fruit & Vegetables</a>
+
+## Использованные технологии:
+
+<div> 
+<img alt="GitHub pages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" /> 
+<img alt="HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+<img alt="SASS" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
+</div>
+
+## Наша команда:
+
+<h3>
+  <a href="https://github.com/Alesia0401">
+    <img alt="Alesia" src="https://img.shields.io/badge/-Daria-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/Tatiana-Bessoltseva">
+    <img alt="Tatiana" src="https://img.shields.io/badge/-Lyuba-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/o-kova">
+    <img alt="Olga" src="https://img.shields.io/badge/-Veronika-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+<h3>
+  <a href="https://github.com/anna-7nova">
+    <img alt="Anna" src="https://img.shields.io/badge/-Veronika-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
