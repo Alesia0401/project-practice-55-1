@@ -39,7 +39,7 @@
     max-width: 100%;
     position: absolute;
     left: -20px;
-    bottom: 538px;
+    bottom: 600px;
     z-index: 20;
 
     @media screen and (min-width: 1280px) {
@@ -106,7 +106,7 @@
 
     @media screen and (min-width: 1280px) {
       font-size: 70px;
-      padding: 142px 0 20px;
+      padding: 120px 0 20px;
     }
     @media screen and (min-width: 5000px) {
       padding: 279px 0 70px;
@@ -118,14 +118,16 @@
     font-family: $fontfDM;
     font-weight: 400;
     font-size: 15px;
-    line-height: 2;
+    line-height: 1.7;
     max-width: 300px;
     color: $colorgrey;
     padding: 0 20px;
+    text-align: center;
 
     @media screen and (min-width: 1280px) {
       max-width: 637px;
       font-size: 18px;
+      text-align: start;
       padding: 0;
     }
     @media screen and (min-width: 5000px) {
@@ -198,6 +200,7 @@
   }
 
   .services__img {
+    width: 100px;
     @media screen and (min-width: 5000px) {
       width: 140px;
     }
