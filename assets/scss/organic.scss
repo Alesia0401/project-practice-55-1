@@ -20,7 +20,7 @@
             max-width: 80%;
         }
 
-        &__h1{
+        .organic__h1{
             position: relative;
             z-index: 20;
             padding: 60px 0 20px;
@@ -47,7 +47,7 @@
             }
         }
 
-        &__img{
+        .organic__img{
             position: absolute;
             top: -20px;
             left: -15px;
@@ -70,7 +70,7 @@
             }
         }
 
-        &__text{
+        .organic__text{
             position: relative;
             z-index: 20;
             padding: 0 20px 40px;
@@ -94,7 +94,7 @@
             }
         }
 
-        &__button{
+        .organic__button{
             display: flex;
             column-gap: 20px;
             justify-content: center;
@@ -156,7 +156,7 @@
         }
     }
 
-        .organic__container__pic{
+        .organic__pic{
             position: relative;
             display: block;
             align-items: center;

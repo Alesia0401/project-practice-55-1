@@ -248,7 +248,7 @@ html {
     max-width: 80%;
   }
 }
-.organic .organic__container__h1 {
+.organic .organic__container .organic__h1 {
   position: relative;
   z-index: 20;
   padding: 60px 0 20px;
@@ -261,58 +261,58 @@ html {
   text-transform: capitalize;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__h1 {
+  .organic .organic__container .organic__h1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .organic .organic__container__h1 {
+  .organic .organic__container .organic__h1 {
     font-size: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .organic .organic__container__h1 {
+  .organic .organic__container .organic__h1 {
     padding: 93px 0 20px;
     font-size: 70px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__h1 {
+  .organic .organic__container .organic__h1 {
     padding: 279px 0 60px;
     font-size: 268px;
   }
 }
-.organic .organic__container__img {
+.organic .organic__container .organic__img {
   position: absolute;
   top: -20px;
   left: -15px;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__img {
+  .organic .organic__container .organic__img {
     top: -34px;
     left: 96px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__img {
+  .organic .organic__container .organic__img {
     top: -41px;
     left: 423px;
   }
 }
-.organic .organic__container__img img {
+.organic .organic__container .organic__img img {
   width: 250px;
 }
 @media screen and (min-width: 1024px) {
-  .organic .organic__container__img img {
+  .organic .organic__container .organic__img img {
     width: 100%;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__img img {
+  .organic .organic__container .organic__img img {
     width: 1500px;
   }
 }
-.organic .organic__container__text {
+.organic .organic__container .organic__text {
   position: relative;
   z-index: 20;
   padding: 0 20px 40px;
@@ -325,34 +325,34 @@ html {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__text {
+  .organic .organic__container .organic__text {
     padding: 0 100px 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .organic .organic__container__text {
+  .organic .organic__container .organic__text {
     padding: 0 300px 40px;
     font-size: 18px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__text {
+  .organic .organic__container .organic__text {
     padding: 0 1000px 150px;
     font-size: 70px;
   }
 }
-.organic .organic__container__button {
+.organic .organic__container .organic__button {
   display: flex;
   column-gap: 20px;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__button {
+  .organic .organic__container .organic__button {
     column-gap: 60px;
   }
 }
-.organic .organic__container__button .text {
+.organic .organic__container .organic__button .text {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -361,16 +361,16 @@ html {
   color: #222222;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__button .text {
+  .organic .organic__container .organic__button .text {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__button .text {
+  .organic .organic__container .organic__button .text {
     font-size: 70px;
   }
 }
-.organic .organic__container__button .circle {
+.organic .organic__container .organic__button .circle {
   position: relative;
   width: 44px;
   height: 44px;
@@ -378,53 +378,53 @@ html {
   border-radius: 50%;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__button .circle {
+  .organic .organic__container .organic__button .circle {
     width: 64px;
     height: 64px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__button .circle {
+  .organic .organic__container .organic__button .circle {
     width: 132px;
     height: 132px;
   }
 }
-.organic .organic__container__button .circle .arrow {
+.organic .organic__container .organic__button .circle .arrow {
   position: absolute;
   top: 15px;
   right: 6px;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__button .circle .arrow {
+  .organic .organic__container .organic__button .circle .arrow {
     top: 23px;
     right: 15px;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__button .circle .arrow {
+  .organic .organic__container .organic__button .circle .arrow {
     width: 60px;
     top: 38%;
     left: 28%;
   }
 }
-.organic .organic__container__button .circle:hover {
+.organic .organic__container .organic__button .circle:hover {
   background: #6cb399;
   box-shadow: inset 0 0 0 3px #09A66D;
 }
-.organic .organic__container__pic {
+.organic .organic__pic {
   position: relative;
   display: block;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .organic .organic__container__pic {
+  .organic .organic__pic {
     top: -30px;
     display: flex;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 5000px) {
-  .organic .organic__container__pic img {
+  .organic .organic__pic img {
     width: 3000px;
   }
 }
@@ -1573,14 +1573,14 @@ html {
   color: #222222;
   text-align: center;
 }
-@media screen and (min-width: 1280x) {
+@media screen and (min-width: 1280px) {
   .extra-inf__title {
     line-height: 4.2;
     text-align: left;
     margin: 30px auto;
   }
 }
-@media screen and (min-width: 1280x) {
+@media screen and (min-width: 1280px) {
   .extra-inf__title {
     line-height: 3.5;
   }
