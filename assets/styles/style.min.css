@@ -796,7 +796,7 @@ html {
 }
 
 .explor-container {
-  max-width: 315px;
+  max-width: 1255px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -813,6 +813,7 @@ html {
 @media screen and (min-width: 1024px) {
   .explor-container {
     max-width: 1020px;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -820,25 +821,50 @@ html {
     max-width: 1275px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px 10px;
   }
 }
+@media screen and (min-width: 5000px) {
+  .explor-container {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .explor-container__part-1 {
+    width: 50vw;
+    margin: 70px auto 135px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .explor-container__part-2 {
+    width: 50vw;
+    margin: 0px auto auto auto;
+  }
+}
 .explor-container__main-text {
-  margin: 25px auto;
+  margin: 20px auto;
+}
+@media screen and (min-width: 768px) {
+  .explor-container__main-text {
+    margin: 105px auto auto 20px;
+  }
 }
 .explor-container__h2 {
-  margin: 25px auto;
+  margin: auto;
   font-family: "Rosario", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: 55px;
   padding-bottom: 20px;
   color: #222222;
+  text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .explor-container__h2 {
+    margin: 25px auto 0px auto;
     font-size: 70px;
+    line-height: 90px;
     text-align: left;
   }
 }
@@ -849,11 +875,22 @@ html {
   line-height: 30px;
   max-width: 637px;
   color: #555555;
+  text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .explor-container__p {
     font-size: 18px;
     text-align: left;
+  }
+}
+.explor-container__buttom-part {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .explor-container__buttom-part {
+    flex-direction: row;
+    position: relative;
   }
 }
 .explor-container__button {
@@ -861,16 +898,17 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  margin: 25px auto;
+  margin: 0px auto;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .explor-container__button {
     flex-direction: row;
-    align-content: left;
+    justify-content: flex-start;
+    margin: 42px auto auto 15px;
   }
 }
 .explor-container__text-button {
-  margin: 25px auto;
+  margin: 10px auto;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -878,28 +916,58 @@ html {
   max-width: 637px;
   color: #555555;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .explor-container__text-button {
+    margin: 25px auto;
     font-size: 18px;
     text-align: left;
   }
 }
-.explor-container__image-button {
+.explor-container__circle {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: #09A66D;
+  border-radius: 50%;
   margin: auto;
 }
-.explor-container__buttom-part {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1024px) {
-  .explor-container__buttom-part {
-    flex-direction: row;
+@media screen and (min-width: 768px) {
+  .explor-container__circle {
+    width: 64px;
+    height: 64px;
+    margin: auto auto auto 20px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 5000px) {
+  .explor-container__circle {
+    width: 132px;
+    height: 132px;
+    margin: auto auto auto 40px;
+  }
+}
+.explor-container__arrow {
+  position: absolute;
+  top: 15px;
+  right: 6px;
+}
+@media screen and (min-width: 768px) {
+  .explor-container__arrow {
+    top: 23px;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 5000px) {
+  .explor-container__arrow {
+    width: 60px;
+    top: 38%;
+    left: 28%;
+  }
+}
+@media screen and (min-width: 1280px) {
   .explor-container__image {
-    bottom: 0px;
-    left: 0px;
+    position: absolute;
+    bottom: -290px;
+    right: -140px;
   }
 }
 
