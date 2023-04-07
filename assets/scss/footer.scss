@@ -66,12 +66,12 @@
     line-height: 1.8;
     color: $colorbl;
     text-align: center;
-    @media screen and (min-width: 1280x) {
+    @media screen and (min-width: 1280px) {
       line-height: 4.2;
       text-align: left;
       margin: 30px auto;
     }
-    @media screen and (min-width: 1280x) {
+    @media screen and (min-width: 1280px) {
       line-height: 3.5;
     }
   }
