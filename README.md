@@ -1,6 +1,4 @@
-# project-practice-55-1
-
-## Ссылка на сайт:
+## Наш проект:
 
 <a alt="Link" href="https://alesia0401.github.io/project-practice-55-1/">Organic Fruit & Vegetables</a>
 
