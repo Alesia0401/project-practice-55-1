@@ -33,21 +33,21 @@
 
 <h3>
   <a href="https://github.com/Alesia0401">
-    <img alt="Alesia" src="https://img.shields.io/badge/-Alesia-black?style=for-the-badge&logo=github&logoColor=white" />
+    <img alt="Alesia" src="https://img.shields.io/badge/-Alesia-blue?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 <h3>
   <a href="https://github.com/Tatiana-Bessoltseva">
-    <img alt="Tatiana" src="https://img.shields.io/badge/-Tatiana-black?style=for-the-badge&logo=github&logoColor=white" />
+    <img alt="Tatiana" src="https://img.shields.io/badge/-Tatiana-red?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 <h3>
   <a href="https://github.com/o-kova">
-    <img alt="Olga" src="https://img.shields.io/badge/-Olga-black?style=for-the-badge&logo=github&logoColor=white" />
+    <img alt="Olga" src="https://img.shields.io/badge/-Olga-green?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 <h3>
   <a href="https://github.com/anna-7nova">
-    <img alt="Anna" src="https://img.shields.io/badge/-Anna-black?style=for-the-badge&logo=github&logoColor=white" />
+    <img alt="Anna" src="https://img.shields.io/badge/-Anna-yellow?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
