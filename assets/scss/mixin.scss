@@ -53,8 +53,8 @@ html {
     }
 
     @include desktop {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
     }
 
     @include desktop-xxl {
@@ -78,8 +78,8 @@ html {
     }
 
     @include desktop {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
+        font-size: 0.75rem;
+        line-height: 1.4rem;
     }
 
     @include desktop-xxl {
@@ -99,5 +99,12 @@ html {
   max-width: 80px;
   max-height: 80px;
   padding: 20px;
+  border-radius: 50%;
+}
+
+@mixin big-circle {
+  max-width: 280px;
+  max-height: 280px;
+  padding: 70px;
   border-radius: 50%;
 }

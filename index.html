@@ -8,25 +8,30 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Organic Fruit & Vegetables</title>
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="assets/styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/style.min.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100;300;400&family=Roboto+Slab&family=Rosario&family=Russo+One&display=swap"
       rel="stylesheet"
-    />
+    />-->
   </head>
   <body>
     <header>
+    <!-- Здесь начинается блок header -->
       <div class="header-container">
         <nav class="nav">
           <ul class="nav__menu">
-            <li class="nav__item"><a href="#">About Us</a></li>
+            <li class="nav__item"><a href="#about-us">About Us</a></li>
             <li class="nav__item"><a href="#why-services">Service</a></li>
-            <li class="nav__item"><a href="#">Menu</a></li>
-            <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__item"><a href="#menu">Menu</a></li>
+            <li class="nav__item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div>
@@ -54,18 +59,17 @@
         </div>
       </div>
     </header>
+    <!-- Здесь заканчивается блок header -->
+
     <main>
+    <!-- Здесь начинается первый блок organic -->
       <section class="organic">
         <div class="organic__container">
           <h1 class="organic__container__h1">Organic Fruit & Vegetables</h1>
           <picture class="organic__container__img">
             <source
-              srcset="assets/images/leaves-small.png"
-              media="(min-width: 300px)"
-            />
-            <source
               srcset="assets/images/leaves.png"
-              media="(min-width: 1280px)"
+              media="(min-width: 1024px)"
             />
             <img src="assets/images/leaves-small.png" alt="leaves" />
           </picture>
@@ -89,12 +93,8 @@
           <div class="organic__container__pic">
             <picture>
               <source
-                srcset="assets/images/vegetables-fruits-small.png"
-                media="(min-width: 300px)"
-              />
-              <source
                 srcset="assets/images/vegetables-fruits.png"
-                media="(min-width: 1280px)"
+                media="(min-width: 1024px)"
               />
               <img
                 src="assets/images/vegetables-fruits-small.png"
@@ -137,9 +137,9 @@
           </div>
         </div>
       </section>
+      <!-- Здесь заканчивается первый блок -->
 
       <!-- Здесь начинается второй блок why -->
-
       <section class="why">
         <div class="why__container">
           <div class="why__content">
@@ -214,28 +214,38 @@
             </div>
           </div>
           <div class="why__img-man">
-            <img src="assets/images/man.png" alt="man" />
+            <picture>
+              <source
+                srcset="assets/images/man.png"
+                media="(min-width: 1024px)"
+              />
+              <img src="assets/images/mini-man.png" alt="man" />
+            </picture>
           </div>
           <div class="why__img-line">
             <img src="assets/images/line.svg" alt="line" />
           </div>
         </div>
       </section>
-
       <!-- Здесь заканчивается второй блок -->
 
       <!-- Здесь начинается третий блок explor -->
       <div class="explor">
         <section class="explor-container">
-          <div>
-            <img
-              src="assets/images/block3-picture-with-vegetables.jpg"
-              alt="Примеры продукции"
+          <picture class="explor-container__part-1">
+            <source
+              srcset="assets/images/block3-picture-with-vegetables.jpg"
+              media="(min-width: 1024px)"
             />
-          </div>
-          <div>
+            <img
+            src="assets/images/block3-picture-with-vegetables-small.jpg"
+            alt="Примеры продукции"
+          />
+        </picture>
+          
+          <div class="explor-container__part-2">
             <div class="explor-container__main-text">
-              <h2 class="explor-container__h2">Explor Our Special Items</h2>
+              <h2 class="explor-container__h2" id="menu">Explor Our Special Items</h2>
               <p class="explor-container__p">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -245,15 +255,20 @@
             <div class="explor-container__buttom-part">
               <div class="explor-container__button">
                 <p class="explor-container__text-button">Explor Now</p>
-                <buttom class="explor-container__image-button">
-                  <img src="assets/images/block3-icon-for-buttom.png" alt="#" />
-                </buttom>
+                <button class="explor-container__circle">
+                  <img
+                    class="explor-container__arrow"
+                    src="assets/images/arrow_white.svg"
+                    alt="arrow"
+                  />
               </div>
-              <img
-                class="explor-container__image"
-                src="assets/images/leaves.png"
-                alt="leaves"
-              />
+              <picture class="explor-container__image">
+                <source
+                  srcset="assets/images/leaves.png"
+                  media="(min-width: 1024px)"
+                />
+                <img src="assets/images/leaves-small.png" alt="leaves" />
+              </picture>
             </div>
           </div>
         </section>
@@ -263,7 +278,7 @@
       <!-- Здесь начинается четвертый блок what-our -->
       <section class="reviews-section">
         <div class="review-text">
-          <p>What Our Customers About Us saying</p>
+          <p id="about-us">What Our Customers About Us saying</p>
           <span>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -358,6 +373,7 @@
       </section>
       <section class="mobile-app-section">
         <div class="iphone-photo">
+
           <img src="assets/images/mobile-block/iphone1-959w.png"
               srcset="assets/images/mobile-block/iphone1-241w.png 1x,
                       assets/images/mobile-block/iphone1-959w.png 2x"
@@ -368,6 +384,7 @@
                       assets/images/mobile-block/iphone2-836w.png 2x"
                 alt="iphone-photo"
           >
+
         </div>
         <div class="mobile-description">
           <div class="btn-download">Download App</div>
@@ -381,6 +398,7 @@
           </div>
           <div class="mobile-app-stores">
             <img
+
                 src="assets/images/mobile-block/AS-209w.png"
                 srcset="assets/images/mobile-block/AS-157w.png,
                         assets/images/mobile-block/AS-209w.png 2x,
@@ -394,13 +412,14 @@
                         assets/images/mobile-block/GP-417w.png 3x"
                 alt="Приложение для android"
                 >
+
           </div>
         </div>
       </section>
       <!-- Здесь заканчивается четвертый блок -->
     </main>
     <footer>
-      <!-- Здесь начинается последний блок footer -->
+      <!-- Здесь начинается блок footer -->
       <div class="footer-container">
         <div class="footer-text">
           <div class="footer-logo">
@@ -408,7 +427,7 @@
               <img src="assets/images/logo.svg" alt="logo" />
             </a>
           </div>
-          <p>
+          <p class="paragraf">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer...
@@ -431,8 +450,10 @@
           </ul>
         </section>
         <section class="extra-inf">
-          <h3 class="extra-inf__title">Contact Us</h3>
-          <a class="extra-inf__item" href="mailto:oyasim@email.com"
+          <h3 class="extra-inf__title extra-inf__title_center" id="contact">Contact Us</h3>
+          <a
+            class="extra-inf__item extra-inf__item_center"
+            href="mailto:oyasim@email.com"
             >Email: oyasim@email.com</a
           >
           <div class="extra-inf__list">
