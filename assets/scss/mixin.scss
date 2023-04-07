@@ -101,3 +101,10 @@ html {
   padding: 20px;
   border-radius: 50%;
 }
+
+@mixin big-circle {
+  max-width: 280px;
+  max-height: 280px;
+  padding: 70px;
+  border-radius: 50%;
+}
