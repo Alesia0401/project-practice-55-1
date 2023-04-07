@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Rosario";
+  src: url("../fonts/Rosario-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
 html {
   font-size: clamp(1rem, 0.8873rem + 0.5634vw, 4rem);
   line-height: 24px;
