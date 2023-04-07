@@ -17,7 +17,7 @@
 
 <a alt="Link" href="https://alesia0401.github.io/project-practice-55-1/">Organic Fruit & Vegetables</a>
 
-## Макет сайта:
+## Макет figma:
 
 <a alt="Link" href="https://www.figma.com/file/YasVj3iKyhlHfL5pob9Pbo/organic-food-%2B-(Copy)?t=ziVN0v2mBLHddWVp-0">Organic Fruit & Vegetables</a>
 
