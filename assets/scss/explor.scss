@@ -28,6 +28,7 @@
   }
   @media screen and (min-width: 5000px) {
     max-width: 80%;
+    column-gap: 100px;
   }
 
   &__part-1 {
@@ -39,6 +40,7 @@
 
   &__img {
     @media screen and (min-width: 5000px) {
+      width: 2500px;
     }
   }
 
@@ -60,14 +62,13 @@
     font-family: $fontfRos;
     font-weight: 700;
     font-size: 40px;
-    line-height: 55px;
+    line-height: 1.3;
     padding-bottom: 20px;
     color: $colorbl;
     text-align: center;
     @media screen and (min-width: 1280px) {
       margin: 25px auto 0px auto;
       font-size: 70px;
-      line-height: 90px;
       text-align: left;
     }
     @media screen and (min-width: 5000px) {
@@ -79,7 +80,7 @@
     font-family: $fontfDM;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.6;
     max-width: 637px;
     color: $colorgrey;
     text-align: center;
@@ -89,8 +90,7 @@
     }
     @media screen and (min-width: 5000px) {
       font-size: 70px;
-      width: 100%;
-      line-height: 90px;
+      max-width: 100%;
     }
   }
 
@@ -178,6 +178,11 @@
       position: absolute;
       bottom: -290px;
       right: -140px;
+    }
+    @media screen and (min-width: 5000px) {
+      width: 1800px;
+      bottom: -1000px;
+      right: -503px;
     }
   }
 }
