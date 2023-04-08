@@ -37,6 +37,11 @@
     }
   }
 
+  &__img {
+    @media screen and (min-width: 5000px) {
+    }
+  }
+
   &__part-2 {
     @media screen and (min-width: 768px) {
       width: 50vw;
@@ -65,6 +70,9 @@
       line-height: 90px;
       text-align: left;
     }
+    @media screen and (min-width: 5000px) {
+      font-size: 185px;
+    }
   }
 
   &__p {
@@ -78,6 +86,11 @@
     @media screen and (min-width: 1280px) {
       font-size: 18px;
       text-align: left;
+    }
+    @media screen and (min-width: 5000px) {
+      font-size: 70px;
+      width: 100%;
+      line-height: 90px;
     }
   }
 
@@ -116,6 +129,9 @@
       font-size: 18px;
       text-align: left;
     }
+    @media screen and (min-width: 5000px) {
+      font-size: 60px;
+    }
   }
 
   &__circle {
@@ -135,6 +151,11 @@
       height: 132px;
       margin: auto auto auto 40px;
     }
+  }
+
+  &__circle:hover {
+    background: #6cb399;
+    box-shadow: inset 0 0 0 3px $bkcolbut;
   }
 
   &__arrow {
