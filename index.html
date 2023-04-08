@@ -232,22 +232,22 @@
       <!-- Здесь начинается третий блок explor -->
       <div class="explor">
         <section class="explor-container">
-          <picture class="explor-container__part-1">
-            <source
-              srcset="assets/images/block3-picture-with-vegetables.jpg"
-              media="(min-width: 1024px)"
-            />
-            <img
-              src="assets/images/block3-picture-with-vegetables-small.jpg"
-              alt="Примеры продукции"
-            />
-          </picture>
-
+          <div class="explor-container__part-1">
+            <picture>
+              <source
+                srcset="assets/images/block3-picture-with-vegetables.jpg"
+                media="(min-width: 1024px)"
+              />
+              <img
+                class="explor-container__img"
+                src="assets/images/block3-picture-with-vegetables-small.jpg"
+                alt="Примеры продукции"
+              />
+            </picture>
+          </div>
           <div class="explor-container__part-2">
             <div class="explor-container__main-text">
-              <h2 class="explor-container__h2" id="menu">
-                Explor Our Special Items
-              </h2>
+              <h2 class="explor-container__h2">Explor Our Special Items</h2>
               <p class="explor-container__p">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -257,7 +257,7 @@
             <div class="explor-container__buttom-part">
               <div class="explor-container__button">
                 <p class="explor-container__text-button">Explor Now</p>
-                <button class="explor-container__circle">
+                <button class="explor-container__circle" type="submit">
                   <img
                     class="explor-container__arrow"
                     src="assets/images/arrow_white.svg"
@@ -265,12 +265,16 @@
                   />
                 </button>
               </div>
-              <picture class="explor-container__image">
+              <picture>
                 <source
                   srcset="assets/images/leaves.png"
                   media="(min-width: 1024px)"
                 />
-                <img src="assets/images/leaves-small.png" alt="leaves" />
+                <img
+                  class="explor-container__image"
+                  src="assets/images/leaves-small.png"
+                  alt="leaves"
+                />
               </picture>
             </div>
           </div>
@@ -313,12 +317,14 @@
         </div>
         <div class="review-users">
           <div class="review-user-photo">
-
-            <img src="assets/images/review-block/user-448w.png"
-                  srcset="assets/images/review-block/user-448w.png 0.5x,
-                          assets/images/review-block/user-1788w.png 1x"
-                  alt="Пользователь"
-            >
+            <img
+              src="assets/images/review-block/user-448w.png"
+              srcset="
+                assets/images/review-block/user-448w.png  0.5x,
+                assets/images/review-block/user-1788w.png 1x
+              "
+              alt="Пользователь"
+            />
           </div>
           <div class="review-other-users">
             <div class="stars">
@@ -398,16 +404,22 @@
       </div>
       <div class="mobile-app-section">
         <div class="iphone-photo">
-          <img src="assets/images/mobile-block/iphone1-959w.png"
-              srcset="assets/images/mobile-block/iphone1-241w.png 1x,
-                      assets/images/mobile-block/iphone1-959w.png 2x"
-              alt="iphone-photo"
-          >
-          <img src="assets/images/mobile-block/iphone2-836w.png"
-                srcset="assets/images/mobile-block/iphone2-210.png 1x,
-                      assets/images/mobile-block/iphone2-836w.png 2x"
-                alt="iphone-photo"
-          >
+          <img
+            src="assets/images/mobile-block/iphone1-959w.png"
+            srcset="
+              assets/images/mobile-block/iphone1-241w.png 1x,
+              assets/images/mobile-block/iphone1-959w.png 2x
+            "
+            alt="iphone-photo"
+          />
+          <img
+            src="assets/images/mobile-block/iphone2-836w.png"
+            srcset="
+              assets/images/mobile-block/iphone2-210.png  1x,
+              assets/images/mobile-block/iphone2-836w.png 2x
+            "
+            alt="iphone-photo"
+          />
         </div>
         <div class="mobile-description">
           <div class="btn-download">Download App</div>
@@ -475,9 +487,7 @@
           </ul>
         </section>
         <section class="extra-inf">
-          <h3 class="extra-inf__title extra-inf__title_center" id="contact">
-            Contact Us
-          </h3>
+          <h3 class="extra-inf__title extra-inf__title_center">Contact Us</h3>
           <a
             class="extra-inf__item extra-inf__item_center"
             href="mailto:oyasim@email.com"
