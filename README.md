@@ -8,11 +8,53 @@
 
 ## Использованные технологии:
 
-<div> 
-<img alt="GitHub pages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" /> 
-<img alt="HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
-<img alt="SASS" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
-</div>
+<table  align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="#sssheina-tech">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="48" height="48"/>
+      </a>
+      <br>HTML5
+    </td>
+    <td align="center" width="96">
+      <a href="#sssheina-tech">
+       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48"/>
+      </a>
+      <br>CSS3
+    </td>
+    <td align="center" width="96">
+      <a href="#sssheina-tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="48" height="48"/>
+      </a>
+      <br>SASS
+    </td>
+    <td align="center"  width="96">
+      <a href="#sssheina-tech">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"  width="48" height="48"/>
+      </a>
+      <br>VSC
+    </td>
+    <td align="center" width="96">
+      <a href="#sssheina-tech" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"  width="48" height="48"/>
+      </a>
+      <br>GIT
+    </td>
+    <td align="center" width="96"> 
+      <a href="#sssheina-tech" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="48" height="48"/>
+      </a>
+      <br>GITHUB
+    </td> 
+    <td align="center"  width="96">
+      <a href="#sssheina-tech">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Bootstrap" **alt="Figma"  width="48" height="48"/>
+      </a>
+      <br>FIGMA
+    </td>
+  </tr>
+</table>
+<br>
 
 ## Наша команда:
 
