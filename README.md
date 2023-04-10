@@ -8,7 +8,7 @@
 
 ## Использованные технологии:
 
-<table  align="center">
+<table  align="left">
   <tr>
     <td align="center" width="96">
       <a href="#sssheina-tech">
@@ -58,26 +58,30 @@
 
 ## Наша команда:
 
-<h3>
-  <a href="https://github.com/Alesia0401">
+<table  align="left">
+  <tr>
+    <td align="center" width="110">
+      <a href="https://github.com/Alesia0401">
     <img alt="Alesia" src="https://img.shields.io/badge/-Alesia-blue?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-</h3>
-<h3>
-  <a href="https://github.com/Tatiana-Bessoltseva">
+    </td>
+    <td align="center" width="110">
+      <a href="https://github.com/Tatiana-Bessoltseva">
     <img alt="Tatiana" src="https://img.shields.io/badge/-Tatiana-red?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-</h3>
-<h3>
-  <a href="https://github.com/o-kova">
+    </td>
+    <td align="center" width="110">
+      <a href="https://github.com/o-kova">
     <img alt="Olga" src="https://img.shields.io/badge/-Olga-green?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-</h3>
-<h3>
-  <a href="https://github.com/anna-7nova">
+    </td>
+    <td align="center" width="110">
+      <a href="https://github.com/anna-7nova">
     <img alt="Anna" src="https://img.shields.io/badge/-Anna-yellow?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-</h3>
+    </td>
+  </tr>
+</table>
 
 ## Установка проекта
 Чтобы клонировать проект на свое устройство, используйте комманду ниже:
