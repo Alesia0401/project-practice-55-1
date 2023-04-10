@@ -8,7 +8,7 @@
 
 ## Использованные технологии:
 
-<table  align="left">
+<table align="left">
   <tr>
     <td align="center" width="96">
       <a href="#sssheina-tech">
@@ -53,7 +53,8 @@
       <br>FIGMA
     </td>
   </tr>
-</table>
+</table><br>
+
 
 
 ## Наша команда:
@@ -81,8 +82,8 @@
   </a>
     </td>
   </tr>
-</table>
-<br>
+</table><br>
+
 
 ## Установка проекта
 Чтобы клонировать проект на свое устройство, используйте комманду ниже:
