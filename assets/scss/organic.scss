@@ -174,9 +174,7 @@
 }
 
 .statistics-all{
-    display: grid;
-    justify-content: center;
-    .statistics{
+        .statistics{
         display: flex;
         align-items: center;
         column-gap: 24px;

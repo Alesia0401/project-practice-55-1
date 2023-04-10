@@ -430,10 +430,6 @@ html {
   }
 }
 
-.statistics-all {
-  display: grid;
-  justify-content: center;
-}
 .statistics-all .statistics {
   display: flex;
   align-items: center;
