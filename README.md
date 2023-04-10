@@ -53,13 +53,11 @@
       <br>FIGMA
     </td>
   </tr>
-</table><br>
-
-
+</table><br><br><br><br>
 
 ## Наша команда:
 
-<table  align="left">
+<table align="left">
   <tr>
     <td align="center" width="110">
       <a href="https://github.com/Alesia0401">
@@ -82,8 +80,7 @@
   </a>
     </td>
   </tr>
-</table><br>
-
+</table><br><br>
 
 ## Установка проекта
 Чтобы клонировать проект на свое устройство, используйте комманду ниже:
