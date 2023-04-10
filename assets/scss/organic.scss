@@ -118,12 +118,15 @@
                 }
             }
 
-            .circle{
-                position: relative;
+            .circle {
                 width: 44px;
                 height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background: $bkcolbut;
                 border-radius: 50%;
+                transition: all 0.4s ease-in-out;
                 @media screen and (min-width: 768px){
                     width: 64px;
                     height: 64px;
@@ -134,27 +137,19 @@
                 }
 
                 .arrow{
-                    position: absolute;
-                    top: 15px;
-                    right: 6px;
-                    @media screen and (min-width: 768px){
-                        top: 23px;
-                        right: 15px;
-                    }
                     @media screen and (min-width: 5000px){
                         width: 60px;
-                        top: 38%;
-                        left: 28%;
                     }
                 }
-            }
-
-            .circle:hover{
-                background:#6cb399;
-                box-shadow: inset 0 0 0 3px $bkcolbut;
+            
+                &:hover {
+                    background: #CCCCCC;
+                    border: 1px solid #CCCCCC;
+                    box-shadow: inset 0 0 0 3px $bkcolbut;
+                    cursor: pointer;
+                }
             }
         }
-    }
 
         .organic__pic{
             position: relative;
@@ -171,6 +166,7 @@
                 }
             }
         }
+    }
 }
 
 .statistics-all{
@@ -191,7 +187,9 @@
         }
         
         .statistics__img{
-            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 56px;
             height: 56px;
             background-color: $bkcolfon;
@@ -202,13 +200,8 @@
             }
 
             .img{
-                position: absolute;
-                top: 10px;
-                right: 10px;
                 @media screen and (min-width: 5000px){
                     width: 70px;
-                    top: 30%;
-                    left: 29%;
                 }
             }
         }
